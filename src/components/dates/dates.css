@@ -1,0 +1,33 @@
+.important-dates{
+  background: radial-gradient(246.17% 68.38% at 50% 50%, rgba(0, 0, 0, 0.70) 0%, rgba(0, 44, 76, 0.70) 63.9%, rgba(0, 108, 185, 0.70) 99.69%);
+
+  .heading{
+    color: white;
+  }
+
+  .flex-wrap{
+    gap: 2.5%;
+
+    .date-card{
+      width: clamp(300px, 30%, 400px);
+      border: 1px solid #EEE;
+      border-radius: .75rem;
+      padding: 2.5rem 1.5rem;
+      text-align: center;
+      background-color: white;
+      position: relative;
+
+      .title{
+        text-transform: uppercase;
+        letter-spacing: -1px;
+        font-size: 22px;
+        font-weight: 700;
+        margin-bottom: 1.25rem;
+      }
+
+      .font-18{
+        color: #006CB9;
+      }
+    }
+  }
+}
