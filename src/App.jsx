@@ -93,7 +93,7 @@ function App() {
           <div className="right">
             <div className="font-20 bold">Conference Date</div>
             <div className="font-14 semi-bold">
-              24<sup>th</sup>-25<sup>th</sup> May, 2024
+              23<sup>th</sup>-24<sup>th</sup> May, 2024
             </div>
           </div>
         </div>
