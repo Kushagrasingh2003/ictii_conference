@@ -191,7 +191,7 @@ export default function Convernor() {
 
   return (
     <div className="convernor padding-2-3">
-      <div className="font-36 bold text-center">Convenors</div>
+      {/* <div className="font-36 bold text-center">Convenors</div> */}
       <br />
       <br />
       <div className="con-groups flex-d-row ">
