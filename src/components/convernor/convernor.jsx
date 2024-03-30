@@ -94,6 +94,27 @@ export default function Convernor() {
     },
 
     {
+      head: "ORGANIZING CHAIR",
+      person: [
+        {
+          name: "Dr. Shimpy Goyal (Convenor)",
+          title: "Assistant Professor,DCE",
+          img: ashima,
+        },
+        {
+          name: "Prof. Renu (Co-Convenor)",
+          title: "Assistant Professor,DCE",
+          img: ashima,
+        },
+      ],
+    },
+    {
+      head: "FINANCE CHAIR",
+      person: [
+        { name: "Dr Hansraj Yadav", title: "Registrar,DCE", img: ashima },
+      ],
+    },
+    {
       head: "PUBLICATION CHAIR",
       person: [
         {
@@ -125,21 +146,6 @@ export default function Convernor() {
         },
       ],
     },
-    {
-      head: "ORGANIZING CHAIR",
-      person: [
-        {
-          name: "Dr. Shimpy Goyal (Convenor)",
-          title: "Assistant Professor,DCE",
-          img: ashima,
-        },
-        {
-          name: "Prof. Renu (Co-Convenor)",
-          title: "Assistant Professor,DCE",
-          img: ashima,
-        },
-      ],
-    },
 
     {
       head: "WORKSHOP  CHAIR",
@@ -156,12 +162,7 @@ export default function Convernor() {
         },
       ],
     },
-    {
-      head: "FINANCE CHAIR",
-      person: [
-        { name: "Dr Hansraj Yadav", title: "Registrar,DCE", img: ashima },
-      ],
-    },
+
     // {
     //   head: "Conference General Chair",
     //   person: [{ name: "Dr. Ashima Mehta", title: "HOD, DCE", img: ashima }],
