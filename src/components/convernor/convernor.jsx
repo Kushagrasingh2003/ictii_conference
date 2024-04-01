@@ -163,6 +163,21 @@ export default function Convernor() {
       ],
     },
 
+    {
+      head: "TECHNICAL ADVISORY",
+      person: [
+        {
+          name: "Ms. Nidhi Gupta",
+          title: "Senior Consultant, CapSpire, UK",
+          img: ashima,
+        },
+        {
+          name: "Mr. Varun Mohan",
+          title: "Staff Data Scientist, Delivery Hero, Berlin",
+          img: ashima,
+        },
+      ],
+    },
     // {
     //   head: "Conference General Chair",
     //   person: [{ name: "Dr. Ashima Mehta", title: "HOD, DCE", img: ashima }],
