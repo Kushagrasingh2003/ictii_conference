@@ -15,7 +15,7 @@ export default function ImportantDates() {
           <div className="title font-20 semi-bold">Paper Submission</div>
 
           <div className="font-18 medium-bold">
-            12<sup>th</sup> April, 2024
+            19<sup>th</sup> April, 2024
           </div>
         </div>
 
@@ -23,7 +23,7 @@ export default function ImportantDates() {
           <div className="title font-20 semi-bold">Acceptance</div>
 
           <div className="font-18 medium-bold">
-            25<sup>th</sup> April, 2024
+            28<sup>th</sup> April, 2024
           </div>
         </div>
         <div className="date-card">
