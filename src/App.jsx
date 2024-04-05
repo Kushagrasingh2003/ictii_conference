@@ -9,7 +9,7 @@ import { GoClock } from "react-icons/go";
 import Partners from "./components/partners/partners";
 import Convernor from "./components/convernor/convernor";
 import landing from "./assets/landing.png";
-import ICTII_Logo from "./assets/ICTII_Logo.png";
+import ICTII_Logo from "./assets/ICTII_Logo.jpg";
 import DCE_Logo from "./assets/DCE_Logo.png";
 import Paper_submission from "./assets/papers/splnproc1703_mac.pdf";
 import Registration from "./assets/papers/conference_brochure.pdf";
