@@ -86,14 +86,19 @@
 }
 
 .conference-details {
-  width: 85%;
-  margin: 0 auto;
+  /* width: 85%; */
+  /* margin: 0 auto; */
   position: relative;
   bottom: 30px;
+  align-items: center;
+  justify-content: center;
   border-radius: 0.5rem;
+  display: flex;
 
   .item {
     width: clamp(300px, 100%, 400px);
+    height: 6rem;
+
     padding: 1rem 1.5rem;
     display: flex;
 
@@ -188,7 +193,8 @@
 }
 
 .register,
-.submit-paper {
+.submit-paper,
+.payment {
   background-color: #f5f5f5;
   padding: 0.75rem 2rem;
   margin: 0.5rem 1rem;
@@ -210,13 +216,24 @@
   }
 }
 
-.submit-paper {
+.payment {
   color: #039903;
   border: 1px solid #039903;
   box-shadow: 0px 3px 4px 0px rgba(3, 153, 3, 0.4);
 
   &:hover {
     background-color: #039903;
+    color: #f5f5f5;
+  }
+}
+
+.submit-paper {
+  color: #0999ff;
+  border: 1px solid #0999ff;
+  box-shadow: 0px 2px 4px 0px rgba(7, 120, 200, 0.4);
+
+  &:hover {
+    background-color: #0999ff;
     color: #f5f5f5;
   }
 }
