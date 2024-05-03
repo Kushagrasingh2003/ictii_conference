@@ -1,7 +1,8 @@
 import "../../App.css";
 import Papers from "../papers/papers";
 import ImportantDates from "../dates/dates";
-import Navbar from "../navbar/navbar";
+import { Link } from "react-router-dom";
+// import Navbar from "../navbar/navbar";
 import { FaRegCheckCircle } from "react-icons/fa";
 import { MdDateRange, MdLocationOn } from "react-icons/md";
 import { GoClock } from "react-icons/go";
@@ -198,9 +199,12 @@ function App() {
 
           <br />
           <div className="flex-j-cen flex-wrap">
-            <a className="register bold" href="/register">
+            {/* <a className="register bold"  Link="/register">
               Registration
-            </a>
+            </a> */}
+            <Link className="register bold" to="/register">
+              Registration
+            </Link>
             <a className="payment bold" href={Registration} target="/">
               Payment Details
             </a>
