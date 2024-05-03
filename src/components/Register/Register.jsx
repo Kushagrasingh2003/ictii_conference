@@ -1,14 +1,19 @@
 import { useState, useEffect } from "react";
 import "./Register.css";
 import emailjs from "@emailjs/browser";
+import storage from "../../../firebaseConfig";
+import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
 import { useNavigate } from "react-router-dom";
 
 const Register = () => {
   //   const form = useRef();
   useEffect(() => emailjs.init("pw-0MCe0N5hGr1c1y"), []);
-  const [file1, setFile1] = useState(null);
-  const [file2, setFile2] = useState(null);
+  const [file1, setFile1] = useState("");
+  const [file2, setFile2] = useState("");
+  const [file3, setFile3] = useState("");
+  const [percent, setPercent] = useState(0);
   const navigate = useNavigate();
+  var file_name = "";
 
   const [toSend, setToSend] = useState({
     From_name: "",
@@ -51,50 +56,24 @@ const Register = () => {
       modeOfPresentation: toSend.modeOfPresentation,
       feeCategory: toSend.feeCategory,
       amountPaid: toSend.amountPaid,
-      PaidDetails: file1,
-      ProofOfRegistration: file2,
       attendanceDays: toSend.attendanceDays,
       comments: toSend.comments,
     };
 
-    emailjs
-      .send(
-        "service_1909vx8",
-        "template_7dc632b",
-
-        params
-        // "pw-0MCe0N5hGr1c1y"
-      )
-      .then(
-        () => {
-          console.log("SUCCESS!");
-          navigate("/");
-          console.log(params);
-        },
-        (error) => {
-          console.log("FAILED...", error.text);
-        }
-      );
-
-    // setToSend({
-    //   From_name: "",
-    //   To_name: "DCE",
-    //   designation: "",
-    //   email: "",
-    //   mobile: "",
-    //   institution: "",
-    //   address: "",
-    //   city: "",
-    //   state: "",
-    //   country: "",
-    //   titleOfResearch: "",
-    //   paperId: "",
-    //   modeOfPresentation: "",
-    //   feeCategory: "",
-    //   amountPaid: "",
-    //   attendanceDays: "",
-    //   comments: "",
-    // });
+    emailjs.send("service_1909vx8", "template_7dc632b", params).then(
+      () => {
+        console.log("SUCCESS!");
+        navigate("/");
+        handleUpload1();
+        handleUpload2();
+        handleUpload3();
+        // console.log(file2.name);
+        console.log(params);
+      },
+      (error) => {
+        console.log("FAILED...", error.text);
+      }
+    );
   };
   const handleFileChange1 = (e) => {
     setFile1(e.target.files[0]);
@@ -102,10 +81,89 @@ const Register = () => {
   const handleFileChange2 = (e) => {
     setFile2(e.target.files[0]);
   };
+  const handleFileChange3 = (e) => {
+    setFile3(e.target.files[0]);
+  };
+  const handleUpload2 = () => {
+    if (!file2) {
+      alert("Please upload a file first!");
+    }
 
-  // const handleChange = (e) => {
-  //   setToSend({ ...toSend, [e.target.name]: e.target.value });
-  // };
+    const storageRef = ref(storage, `/files/${toSend.email}/${file2.name}`);
+    const uploadTask = uploadBytesResumable(storageRef, file1);
+    uploadTask.on(
+      "state_changed",
+      (snapshot) => {
+        const percent = Math.round(
+          (snapshot.bytesTransferred / snapshot.totalBytes) * 100
+        );
+
+        // update progress
+        setPercent(percent);
+      },
+      (err) => console.log(err),
+      () => {
+        // download url
+        getDownloadURL(uploadTask.snapshot.ref).then((url) => {
+          console.log(url);
+        });
+      }
+    );
+  };
+  const handleUpload3 = () => {
+    if (!file3) {
+      alert("Please upload a file first!");
+    }
+
+    const storageRef = ref(storage, `/files/${toSend.email}/${file3.name}`);
+    const uploadTask = uploadBytesResumable(storageRef, file1);
+    uploadTask.on(
+      "state_changed",
+      (snapshot) => {
+        const percent = Math.round(
+          (snapshot.bytesTransferred / snapshot.totalBytes) * 100
+        );
+
+        // update progress
+        setPercent(percent);
+      },
+      (err) => console.log(err),
+      () => {
+        // download url
+        getDownloadURL(uploadTask.snapshot.ref).then((url) => {
+          console.log(url);
+        });
+      }
+    );
+  };
+
+  const handleUpload1 = () => {
+    if (!file1) {
+      alert("Please upload a file first!");
+    }
+
+    const storageRef = ref(storage, `/files/${toSend.email}/${file1.name}`);
+    const uploadTask = uploadBytesResumable(storageRef, file1);
+    uploadTask.on(
+      "state_changed",
+      (snapshot) => {
+        const percent = Math.round(
+          (snapshot.bytesTransferred / snapshot.totalBytes) * 100
+        );
+
+        // update progress
+        setPercent(percent);
+      },
+      (err) => console.log(err),
+      () => {
+        // download url
+        getDownloadURL(uploadTask.snapshot.ref).then((url) => {
+          console.log(url);
+        });
+      }
+    );
+  };
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setToSend({
@@ -291,7 +349,7 @@ const Register = () => {
               <label>Upload Fee Paid Details/Proofs :</label>
               <input
                 type="file"
-                name="PaidDetails"
+                name="file1"
                 required
                 accept=".pdf,.doc,.docx"
                 placeholder="Upload File"
@@ -299,16 +357,29 @@ const Register = () => {
                 onChange={handleFileChange1}
               />
             </div>
+
             <div className="form-group">
               <label>Attach Proof of Registration Category(ID Card) :</label>
               <input
                 type="file"
-                name="ProofOfRegistration"
+                name="file2"
                 required
                 accept=".pdf,.doc,.docx"
                 placeholder="Upload File"
                 // value={toSend.ProofOfRegistration}
                 onChange={handleFileChange2}
+              />
+            </div>
+            <div className="form-group">
+              <label>Upload Field Copyright Form :</label>
+              <input
+                type="file"
+                name="file3"
+                required
+                accept=".pdf,.doc,.docx"
+                placeholder="Upload File"
+                // value={toSend.ProofOfRegistration}
+                onChange={handleFileChange3}
               />
             </div>
 
