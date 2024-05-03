@@ -6,12 +6,12 @@ import { getStorage } from "firebase/storage";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyCY9OAPw49Lr3jxjk36w2oT7zQejTHhtks",
-  authDomain: "ictii-conference.firebaseapp.com",
-  projectId: "ictii-conference",
-  storageBucket: "ictii-conference.appspot.com",
-  messagingSenderId: "236122727868",
-  appId: "1:236122727868:web:011821543a861a685f37b9",
+  apiKey: "AIzaSyBuAbkkmK11JA44dbH5RKaXOUNQEoOCnUY",
+  authDomain: "ictii-conference2024.firebaseapp.com",
+  projectId: "ictii-conference2024",
+  storageBucket: "ictii-conference2024.appspot.com",
+  messagingSenderId: "142907563070",
+  appId: "1:142907563070:web:69adb04b0952233e5d856f",
 };
 
 // Initialize Firebase

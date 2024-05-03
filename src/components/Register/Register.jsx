@@ -13,7 +13,6 @@ const Register = () => {
   const [file3, setFile3] = useState("");
   const [percent, setPercent] = useState(0);
   const navigate = useNavigate();
-  var file_name = "";
 
   const [toSend, setToSend] = useState({
     From_name: "",
@@ -42,7 +41,7 @@ const Register = () => {
     }
     const params = {
       from_name: toSend.From_name,
-      to_name: "Aditya",
+      to_name: "DCE@ggn",
       designation: toSend.designation,
       email: toSend.email,
       mobile: toSend.mobile,
@@ -63,7 +62,7 @@ const Register = () => {
     emailjs.send("service_1909vx8", "template_7dc632b", params).then(
       () => {
         console.log("SUCCESS!");
-        navigate("/");
+        // navigate("/");
         handleUpload1();
         handleUpload2();
         handleUpload3();
