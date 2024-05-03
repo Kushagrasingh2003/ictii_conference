@@ -45,28 +45,32 @@
   .image1 {
     width: 15%;
     object-fit: contain;
+    margin-top: 3%;
   }
 
   .image3 {
     width: 8%;
     object-fit: contain;
-
+    margin-top: 3%;
   }
 
   .image4{
     width: 8%;
     object-fit: contain;
+    margin-top: 3%;
   }
 
   .image5{
     width: 8%;
     object-fit: contain;
+    margin-top: 3%;
   }
 
   .image2 {
     width: 8%;
     object-fit: contain;
     margin-right: 5%;
+    margin-top: 3%;
   }
 
   .logo-container {
