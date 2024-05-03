@@ -11,6 +11,9 @@ import Convernor from "../convernor/convernor";
 import landing from "../../assets/landing.png";
 import ICTII_Logo from "../../assets/ICTII_Logo.jpg";
 import DCE_Logo from "../../assets/DCE_Logo.png";
+import Naac_logo from "../../assets/naac.png";
+import AICTE_logo from "../../assets/AICTE.png";
+import GU_logo from "../../assets/GU.png";
 import Paper_submission from "../../assets/papers/splnproc1703_mac.pdf";
 import Registration from "../../assets/papers/conference_brochure.pdf";
 
@@ -180,7 +183,9 @@ function App() {
         <div className=" home-container">
           <div className="flex logo-container">
             <img className="image1" src={DCE_Logo} alt="DCE Logo" />
-
+            <img className="image3" src={GU_logo} alt="GU Logo" />
+            <img className="image4" src={AICTE_logo} alt="AICTE Logo" />
+            <img className="image5" src={Naac_logo} alt="NAAC Logo" />
             <img className="image2" src={ICTII_Logo} alt="ICTII Logo" />
           </div>
 

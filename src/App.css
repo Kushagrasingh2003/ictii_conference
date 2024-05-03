@@ -43,15 +43,30 @@
   }
 
   .image1 {
-    width: 18%;
+    width: 15%;
+    object-fit: contain;
+  }
+
+  .image3 {
+    width: 8%;
+    object-fit: contain;
+
+  }
+
+  .image4{
+    width: 8%;
+    object-fit: contain;
+  }
+
+  .image5{
+    width: 8%;
     object-fit: contain;
   }
 
   .image2 {
-    object-fit: cover;
-    width: 20%;
-    height: 50%;
-    margin-top: 4%;
+    width: 8%;
+    object-fit: contain;
+    margin-right: 5%;
   }
 
   .logo-container {
