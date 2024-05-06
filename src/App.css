@@ -473,7 +473,7 @@
   }
 }
 
-@media screen and (min-width: 1500px) {
+@media screen and (min-width: 1280px) {
   .home-container {
     margin-top: -22rem;
   }
