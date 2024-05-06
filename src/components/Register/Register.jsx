@@ -370,7 +370,7 @@ const Register = () => {
               />
             </div>
             <div className="form-group">
-              <label>Upload Field Copyright Form :</label>
+              <label>Upload Filled Copyright Form :</label>
               <input
                 type="file"
                 name="file3"
