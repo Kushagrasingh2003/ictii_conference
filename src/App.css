@@ -477,4 +477,8 @@
   .home-container {
     margin-top: -22rem;
   }
+  .logocontainer {
+    display: flex;
+    justify-content: center;
+  }
 }
