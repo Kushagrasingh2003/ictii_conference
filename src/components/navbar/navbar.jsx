@@ -19,7 +19,11 @@ export default function Navbar() {
     { title: "Industry 5.0", link: "/#about", hover: "" },
     { title: "Important Dates", link: "/#dates", hover: "" },
     { title: "Tracks", link: "/#tracks", hover: "" },
-    { title: "Paper Submission", link: "#", hover: "email" },
+    {
+      title: "Paper Submission",
+      link: "#",
+      hover: "ictii2024@ggnindia.dronacharya.info",
+    },
   ];
 
   const [navExpanded, setNavExpanded] = useState(false);
