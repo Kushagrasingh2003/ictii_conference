@@ -1,36 +1,36 @@
-.papers{
-  width: 100%;
+.papers {
+  width: 100vw;
   justify-content: center;
   align-items: center;
   padding: 2rem clamp(5px, 1rem, 2rem);
-  background-color: rgba(0,0,0,.05);
-  
-  .flex{
+  background-color: rgba(0, 0, 0, 0.05);
+
+  .flex {
     gap: 1.25rem;
     flex-wrap: wrap;
     justify-content: center;
   }
 }
 
-.card{
-  padding:3rem clamp(.5rem, 2rem, 2rem);
-  border-radius: .75rem;
-  border: 1px solid #EEE;
+.card {
+  padding: 3rem clamp(0.5rem, 2rem, 2rem);
+  border-radius: 0.75rem;
+  border: 1px solid #eee;
   width: clamp(310px, 32%, 420px);
   display: flex;
   align-items: flex-end;
-  background-color: rgba(0,0,0,.5);
+  background-color: rgba(0, 0, 0, 0.5);
   position: relative;
   overflow: hidden;
   background-blend-mode: multiply;
 
-  .text{
+  .text {
     width: 80%;
     letter-spacing: -1px;
     color: white;
   }
 
-  :is(img){
+  :is(img) {
     position: absolute;
     z-index: -1;
     width: 100%;
@@ -40,16 +40,16 @@
     object-fit: cover;
   }
 
-  &:hover{
-    background-color: rgba(255,255,255,0.5);
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.5);
     cursor: default;
 
-    .text{
+    .text {
       color: black;
       transform: scale(1.05);
     }
 
-    :is(img){
+    :is(img) {
       transform: scale(1.045);
     }
   }

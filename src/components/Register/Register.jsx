@@ -177,7 +177,7 @@ const Register = () => {
           <h1 className="headding">Conference Registration Form</h1>
           <form className="form" onSubmit={onSubmit}>
             <div className="form-group">
-              <label>Name:</label>
+              <label>Name:*</label>
               <input
                 type="text"
                 name="From_name"
@@ -189,7 +189,7 @@ const Register = () => {
             </div>
 
             <div className="form-group">
-              <label>Designation:</label>
+              <label>Designation:*</label>
               <input
                 type="text"
                 name="designation"
@@ -200,7 +200,7 @@ const Register = () => {
               />
             </div>
             <div className="form-group">
-              <label>Email:</label>
+              <label>Email:*</label>
               <input
                 type="email"
                 name="email"
@@ -211,7 +211,7 @@ const Register = () => {
               />
             </div>
             <div className="form-group">
-              <label>Mobile:</label>
+              <label>Mobile:*</label>
               <input
                 type="tel"
                 name="mobile"
@@ -222,7 +222,7 @@ const Register = () => {
               />
             </div>
             <div className="form-group">
-              <label>Institution(University/College/Organization):</label>
+              <label>Institution(University/College/Organization):*</label>
               <input
                 type="text"
                 name="institution"
@@ -234,7 +234,7 @@ const Register = () => {
             </div>
 
             <div className="form-group">
-              <label>Address:</label>
+              <label>Address:*</label>
               <textarea
                 name="address"
                 required
@@ -244,7 +244,7 @@ const Register = () => {
               />
             </div>
             <div className="form-group">
-              <label>City:</label>
+              <label>City:*</label>
               <input
                 type="text"
                 name="city"
@@ -255,7 +255,7 @@ const Register = () => {
               />
             </div>
             <div className="form-group">
-              <label>State:</label>
+              <label>State:*</label>
               <input
                 type="text"
                 name="state"
@@ -266,7 +266,7 @@ const Register = () => {
               />
             </div>
             <div className="form-group">
-              <label>Country:</label>
+              <label>Country:*</label>
               <input
                 type="text"
                 name="country"
@@ -277,7 +277,7 @@ const Register = () => {
               />
             </div>
             <div className="form-group">
-              <label>Title of Research Paper/Talk :</label>
+              <label>Title of Research Paper/Talk :*</label>
               <input
                 type="text"
                 name="titleOfResearch"
@@ -288,7 +288,7 @@ const Register = () => {
               />
             </div>
             <div className="form-group">
-              <label>Paper Id:</label>
+              <label>Paper Id:*</label>
               <input
                 type="text"
                 name="paperId"
@@ -300,7 +300,7 @@ const Register = () => {
             </div>
             <div className="form-group">
               <label>
-                Mode of Paper Presentation(Oral/Poster/Physical/Online) :
+                Mode of Paper Presentation(Oral/Poster/Physical/Online) :*
               </label>
               <select
                 name="modeOfPresentation"
@@ -315,7 +315,7 @@ const Register = () => {
               </select>
             </div>
             <div className="form-group">
-              <label>Registration Fee Category :</label>
+              <label>Registration Fee Category :*</label>
               <select
                 name="feeCategory"
                 value={toSend.feeCategory}
@@ -334,7 +334,7 @@ const Register = () => {
               </select>
             </div>
             <div className="form-group">
-              <label>Registration Fee Amount Paid :</label>
+              <label>Registration Fee Amount Paid :*</label>
               <input
                 type="text"
                 name="amountPaid"
@@ -345,7 +345,7 @@ const Register = () => {
               />
             </div>
             <div className="form-group">
-              <label>Upload Fee Paid Details/Proofs :</label>
+              <label>Upload Fee Paid Details/Proofs :*</label>
               <input
                 type="file"
                 name="file1"
@@ -358,7 +358,7 @@ const Register = () => {
             </div>
 
             <div className="form-group">
-              <label>Attach Proof of Registration Category(ID Card) :</label>
+              <label>Attach Proof of Registration Category(ID Card) :*</label>
               <input
                 type="file"
                 name="file2"
@@ -370,7 +370,7 @@ const Register = () => {
               />
             </div>
             <div className="form-group">
-              <label>Upload Filled Copyright Form :</label>
+              <label>Upload Filled Copyright Form :*</label>
               <input
                 type="file"
                 name="file3"
@@ -383,7 +383,7 @@ const Register = () => {
             </div>
 
             <div className="form-group">
-              <label>What days will you attend the conference? :</label>
+              <label>What days will you attend the conference? :*</label>
               <select
                 name="attendanceDays"
                 value={toSend.attendanceDays}
