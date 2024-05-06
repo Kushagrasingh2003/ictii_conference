@@ -62,7 +62,7 @@ const Register = () => {
     emailjs.send("service_1909vx8", "template_7dc632b", params).then(
       () => {
         console.log("SUCCESS!");
-        // navigate("/");
+        navigate("/");
         handleUpload1();
         handleUpload2();
         handleUpload3();

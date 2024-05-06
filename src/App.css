@@ -54,13 +54,13 @@
     margin-top: 3%;
   }
 
-  .image4{
+  .image4 {
     width: 8%;
     object-fit: contain;
     margin-top: 3%;
   }
 
-  .image5{
+  .image5 {
     width: 8%;
     object-fit: contain;
     margin-top: 3%;
@@ -419,6 +419,9 @@
 }
 
 @media screen and (max-width: 480px) {
+  .home-container {
+    margin-top: -10rem;
+  }
   .padding-3-2 {
     padding: 2rem 1rem;
   }

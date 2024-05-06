@@ -59,8 +59,7 @@ export default function Navbar() {
                         color: "#fff",
                       }}
                     >
-                      {" "}
-                      Click to open popup{" "}
+                      Paper Submission
                     </button>
                   }
                   position="right center"
