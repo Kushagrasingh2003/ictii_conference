@@ -53,7 +53,7 @@
     width: 15%;
     object-fit: contain;
     margin-top: 5%;
-    margin-left: 5%;
+    /* margin-left: 5%; */
   }
 
   .image3 {
@@ -72,6 +72,7 @@
     width: 8%;
     object-fit: contain;
     margin-top: 6%;
+    margin-right: 2%;
   }
 
   .image2 {
@@ -82,14 +83,16 @@
   }
 
   .image6 {
-    width: 12%;
+    width: 16%;
     object-fit: contain;
-    margin-right: 30%;
+    margin-right: 25%;
+    height: 100%;
   }
 
   .image7 {
-    width: 14%;
+    width: 18%;
     object-fit: contain;
+    height: 100%;
   }
 
   .logo-container {

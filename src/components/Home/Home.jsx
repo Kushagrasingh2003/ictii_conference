@@ -18,6 +18,7 @@ import Springer_logo from "../../assets/Springer_logo.jpg";
 import UGC_logo from "../../assets/UGC_logo.jpg";
 import Paper_submission from "../../assets/papers/splnproc1703_mac.pdf";
 import Registration from "../../assets/papers/conference_brochure.pdf";
+import ict from "../../assets/partners/ict.png";
 
 function App() {
   // const [count, setCount] = useState(0);
@@ -184,11 +185,11 @@ function App() {
       >
         <div className=" home-container">
           <div className="flex logo-container">
-            <img className="image3" src={GU_logo} alt="GU Logo" />
-            <img className="image4" src={AICTE_logo} alt="AICTE Logo" />
             <img className="image1" src={DCE_Logo} alt="DCE Logo" />
-            <img className="image5" src={Naac_logo} alt="NAAC Logo" />
+            <img className="image3" src={GU_logo} alt="GU Logo" />
             <img className="image2" src={ICTII_Logo} alt="ICTII Logo" />
+            <img className="image4" src={AICTE_logo} alt="AICTE Logo" />
+            <img className="image5" src={Naac_logo} alt="NAAC Logo" />
           </div>
 
           <div className="flex-d-col">
@@ -222,7 +223,7 @@ function App() {
           <div className="logocontainer">
             <div>
               <img className="image6" src={Springer_logo} alt="Springer_logo" />
-              <img className="image7" src={UGC_logo} alt="UGC_logo" />
+              <img className="image7" src={ict} alt="UGC_logo" />
             </div>
           </div>
         </div>
