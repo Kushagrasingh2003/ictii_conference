@@ -59,8 +59,9 @@ export default function Navbar() {
                     <button
                       style={{
                         border: "none",
-                        backgroundColor: "#242424",
+                        backgroundColor: "#242424e0",
                         color: "#fff",
+                        fontWeight: 600,
                       }}
                     >
                       Paper Submission
