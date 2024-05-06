@@ -41,7 +41,12 @@
   }
 
   .home-container {
-    margin-top: -12rem;
+    margin-top: -8rem;
+  }
+  .logocontainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
   }
 
   .image1 {
@@ -75,13 +80,13 @@
     margin-top: 6%;
   }
 
-  .image6{
+  .image6 {
     width: 12%;
     object-fit: contain;
-    margin-right: 60%;
+    margin-right: 30%;
   }
 
-  .image7{
+  .image7 {
     width: 14%;
     object-fit: contain;
   }

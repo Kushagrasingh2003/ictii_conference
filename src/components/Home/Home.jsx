@@ -14,8 +14,8 @@ import DCE_Logo from "../../assets/DCE_Logo.png";
 import Naac_logo from "../../assets/naac.png";
 import AICTE_logo from "../../assets/AICTE.png";
 import GU_logo from "../../assets/GU.png";
-import Springer_logo from "../../assets/Springer_logo.jpg"
-import UGC_logo from "../../assets/UGC_logo.jpg"
+import Springer_logo from "../../assets/Springer_logo.jpg";
+import UGC_logo from "../../assets/UGC_logo.jpg";
 import Paper_submission from "../../assets/papers/splnproc1703_mac.pdf";
 import Registration from "../../assets/papers/conference_brochure.pdf";
 
@@ -184,9 +184,9 @@ function App() {
       >
         <div className=" home-container">
           <div className="flex logo-container">
-            <img className="image1" src={DCE_Logo} alt="DCE Logo" />
             <img className="image3" src={GU_logo} alt="GU Logo" />
             <img className="image4" src={AICTE_logo} alt="AICTE Logo" />
+            <img className="image1" src={DCE_Logo} alt="DCE Logo" />
             <img className="image5" src={Naac_logo} alt="NAAC Logo" />
             <img className="image2" src={ICTII_Logo} alt="ICTII Logo" />
           </div>
@@ -220,10 +220,11 @@ function App() {
             </a>
           </div>
           <div className="logocontainer">
-        <img className="image6" src={Springer_logo} alt="Springer_logo" />
-        <img className="image7" src={UGC_logo} alt="UGC_logo" />
+            <div>
+              <img className="image6" src={Springer_logo} alt="Springer_logo" />
+              <img className="image7" src={UGC_logo} alt="UGC_logo" />
+            </div>
           </div>
-
         </div>
         <img className="background-image" src={landing} alt="" />
       </div>
