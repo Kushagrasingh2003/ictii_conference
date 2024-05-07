@@ -323,14 +323,19 @@ const Register = () => {
                 required
               >
                 <option value="">choose</option>
-                <option value="Oral">
+                <option value="Academician">Academician</option>
+                <option value="Corporates/Industry">
                   Participants from Corporates/Industry
                 </option>
-                <option value="Poster">Research Scholars and Students</option>
-                <option value="Physical">
+                <option value="Research Scholars and Students">
+                  Research Scholars and Students
+                </option>
+                <option value="Participant from Host Organization">
                   Participant from Host Organization
                 </option>
-                <option value="Online">Delegates from Foreign/Abroad</option>
+                <option value="Delegates from Foreign/Abroad">
+                  Delegates from Foreign/Abroad
+                </option>
               </select>
             </div>
             <div className="form-group">
