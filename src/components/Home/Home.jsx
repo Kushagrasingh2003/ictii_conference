@@ -15,7 +15,7 @@ import Naac_logo from "../../assets/naac.png";
 import AICTE_logo from "../../assets/AICTE.png";
 import GU_logo from "../../assets/GU.png";
 import Springer_logo from "../../assets/Springer_logo.jpg";
-import UGC_logo from "../../assets/UGC_logo.jpg";
+// import UGC_logo from "../../assets/UGC_logo.jpg";
 import Paper_submission from "../../assets/papers/splnproc1703_mac.pdf";
 import Registration from "../../assets/papers/conference_brochure.pdf";
 import ict from "../../assets/partners/ict.png";

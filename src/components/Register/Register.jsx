@@ -89,7 +89,7 @@ const Register = () => {
     }
 
     const storageRef = ref(storage, `/files/${toSend.email}/${file2.name}`);
-    const uploadTask = uploadBytesResumable(storageRef, file1);
+    const uploadTask = uploadBytesResumable(storageRef, file3);
     uploadTask.on(
       "state_changed",
       (snapshot) => {
@@ -115,7 +115,7 @@ const Register = () => {
     }
 
     const storageRef = ref(storage, `/files/${toSend.email}/${file3.name}`);
-    const uploadTask = uploadBytesResumable(storageRef, file1);
+    const uploadTask = uploadBytesResumable(storageRef, file3);
     uploadTask.on(
       "state_changed",
       (snapshot) => {
